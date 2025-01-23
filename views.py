@@ -21,7 +21,7 @@ ROOT = Path(os.path.realpath(__file__)).parent.parent.parent
 from .mailer import send_sfu_email
 
 def read_markdown(md):
-    with open(md) as f:
+    with open(md, encoding='utf-8') as f:
         return f.read()
 
 def index(request):
